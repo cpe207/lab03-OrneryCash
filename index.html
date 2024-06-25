@@ -1,9 +1,74 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Teerapad Pipadboonyarat's portfolio website.">
+  <title>Teerapad Pipadboonyarat's portfolio website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet" media="screen">
+  <link href="styles/global.css" rel="stylesheet">
+  <link href="styles/index.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <h1><a href="/lab02-OrneryCash">Teerapad Pipadboonyarat</a></h1>
+    <ul>
+      <li><a href="/lab02-OrneryCash">Home</a></li>
+      <li><a href="/lab02-OrneryCash/experience.html" id="exp">Experience</a></li>
+      <li><a href="/lab02-OrneryCash/contact.html" id="contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div>
+      <div id="intro">
+        <p> Greetings, everyone! My name is Teerapad, but you can call me <em><strong>Mew</strong></em>.
+          I’m currently studying <strong>Computer Engineering</strong> at Chiang Mai University and delving into
+          Psychology (specifically <strong>Cognitive Psychology</strong> at the moment) in my free time.</p>
+      </div>
+      <figure>
+        <img src="./public/profile.jpg" alt="My profile picture">
+        <figcaption>Mew (aka OrneryCash) ^^!</figcaption>
+      </figure>
+    </div>
+  </main>
+  <div id="skills">
+    <h1>Skills</h1>
+    <div class="skill">
+      <p>C++</p>
+      <div class="meter">
+        <span style="width:95%;"><span class="progress" id="meter-1"></span></span>
+      </div>
+    </div>
+    <div class="skill">
+      <p>C</p>
+      <div class="meter">
+        <span style="width:90%;"><span class="progress" id="meter-2"></span></span>
+      </div>
+    </div>
+    <div class="skill">
+      <p>Python</p>
+      <div class="meter">
+        <span style="width:90%;"><span class="progress" id="meter-3"></span></span>
+      </div>
+    </div>
+    <div class="skill">
+      <p>JavaScript / TypeScript</p>
+      <div class="meter">
+        <span style="width:80%;"><span class="progress" id="meter-4"></span></span>
+      </div>
+    </div>
+    <div class="skill">
+      <p>Java</p>
+      <div class="meter">
+        <span style="width:70%;"><span class="progress" id="meter-5"></span></span>
+      </div>
+    </div>
+    <p>...and 5 more programming languages</p>
+  </div>
+</body>
+
 </html>

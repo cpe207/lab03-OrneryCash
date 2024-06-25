@@ -1,0 +1,130 @@
+#skills {
+  display: flex;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #1e1e2e;
+  font-size: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  gap: 0.9em;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#skills p {
+  width: 100%;
+  margin: auto;
+  float: left;
+}
+
+.meter {
+  height: 15px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.meter span {
+  display: block;
+  height: 100%;
+}
+
+.progress {
+  background-color: #e4c465;
+  animation: progressBar 0.8s ease-in-out;
+  -webkit-animation: progressBar 0.8s ease-in-out;
+  -moz-animation: progressBar 0.8s ease-in-out;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+}
+
+#meter-1 {
+  background-color: #74c7ec;
+}
+
+#meter-2 {
+  animation-delay: 0.25s;
+  background-color: #fab387;
+}
+
+#meter-3 {
+  animation-delay: 0.5s;
+  background-color: #f38ba8;
+}
+
+#meter-4 {
+  animation-delay: 0.75s;
+  background-color: #cba6f7;
+}
+
+#meter-5 {
+  animation-delay: 1s;
+  background-color: #b4befe;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes progressBar {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .meter {
+    height: 15px;
+    position: relative;
+    background: #f3efe6;
+    overflow: hidden;
+    width: 55%;
+    border-radius: 10px;
+  }
+
+  #skills p {
+    width: 55%;
+    margin: auto;
+    float: left;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #skills {
+    font-size: 1.1rem;
+  }
+
+  #skills h1 {
+    font-size: 1.3rem;
+  }
+}

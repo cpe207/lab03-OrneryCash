@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  color: #cdd6f4;
+  background-color: #313244;
+  font-family: "JetBrains Mono", monospace;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding: 0.8em;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  background-color: #313244;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+}
+
+a {
+  color: #eba0ac;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f38ba8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  color: #cdd6f4;
+}
+
+nav a:visited {
+  color: #cdd6f4;
+}
+
+#exp:hover {
+  color: #a6e3a1;
+}
+
+#contact:hover {
+  color: #89dceb;
+}
+
+main {
+  display: flex;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #1e1e2e;
+  font-size: 0.8rem;
+  flex-direction: column;
+}
+
+main strong {
+  color: #a6e3a1;
+}
+
+main em {
+  color: #89dceb;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2em;
+}
+
+main figure {
+  width: 60%;
+}
+
+main figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro a {
+  color: #f38ba8;
+}
+
+@media only screen and (min-width: 320px) {
+  nav {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    font-size: 1rem;
+  }
+
+  main div {
+    width: 95%;
+    flex-direction: row;
+  }
+
+  main figure {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  main div {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  nav {
+    font-size: 1.2rem;
+  }
+
+  #intro {
+    font-size: 1.1rem;
+  }
+
+  main figure {
+    width: 30%;
+  }
+}

@@ -1,0 +1,97 @@
+#experiences {
+  display: flex;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #1e1e2e;
+  font-size: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+#experiences h1 {
+  font-size: 1rem;
+}
+
+.exp {
+  display: flex;
+  gap: 1.5em;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #1e1e2e;
+  font-size: 1rem;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.exp .desc {
+  width: 100%;
+}
+
+.exp .desc p {
+  font-size: 0.8rem;
+}
+
+.exp .desc em {
+  color: #a6e3a1;
+}
+
+.exp figure {
+  width: 100%;
+}
+
+.exp figure img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.exp figure figcaption {
+  font-size: 0.8rem;
+}
+
+.exp-rev figure figcaption {
+  float: right;
+}
+
+@media only screen and (min-width: 768px) {
+  .exp .desc {
+    width: 50%;
+  }
+
+  .exp {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .exp-rev {
+    flex-direction: row-reverse;
+  }
+
+  .exp figure {
+    width: 35%;
+  }
+
+  .exp .desc p {
+    font-size: 0.9rem;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  #experiences {
+    font-size: 1.1rem;
+  }
+
+  #experiences h1 {
+    font-size: 1.3rem;
+  }
+
+  .exp figure {
+    width: 25%;
+  }
+
+  .exp .desc p {
+    font-size: 1rem;
+  }
+}
